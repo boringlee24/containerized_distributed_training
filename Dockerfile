@@ -1,5 +1,10 @@
-FROM nvcr.io/nvidia/pytorch:22.12-py3
+FROM huggingface/transformers-pytorch-gpu:latest
 
-WORKDIR /workspace/imagenet
+RUN rm -r /transformers
+RUN pip3 install --no-cache-dir accelerate
+RUN pip3 uninstall -y transformers
+RUN pip3 install --no-cache-dir git+https://github.com/huggingface/transformers
+
+WORKDIR /workspace/transformers/examples/pytorch/question-answering
 
 CMD ["/bin/bash"]
