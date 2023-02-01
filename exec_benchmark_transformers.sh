@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x 
 
 CONTAINER_ID=$1
 ARCH=$2
