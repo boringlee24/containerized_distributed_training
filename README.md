@@ -37,3 +37,16 @@ Use ```docker container ls``` to check if the container is up. Once it's up, gra
 ```
 ./exec_benchmark_<benchmark>.sh <arg1> <arg2> ...
 ```
+You can also execute the command in shell inside a container (good for debug purposes). Run this command:
+```
+docker container exec -it <container ID> /bin/bash
+```
+
+## Exit
+
+When you have finished the benchmarking, stop the container:
+```
+docker stop <container ID>
+```
+On AWS EC2 console, stop or terminate the instance.
+
