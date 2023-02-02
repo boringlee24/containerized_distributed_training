@@ -42,6 +42,12 @@ You can also execute the command in shell inside a container (good for debug pur
 docker container exec -it <container ID> /bin/bash
 ```
 
+For imagenet benchmarks, try these models: ```resnet50```, ```vit_b_16```, ```vgg19_bn```, ```resnext50_32x4d```, ```inception_v3```, ```shufflenet_v2_x1_5```.
+
+For transformer benchmarks, try these models: ```bert-base-uncased```, ```xlnet-base-cased```, ```xlm-mlm-en-2048```, ```roberta-base```, ```distilbert-base-cased```.
+
+
+
 ## Exit
 
 When you have finished the benchmarking, stop the container:
