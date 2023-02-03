@@ -63,7 +63,7 @@ The P100 and V100 GPU experiments can be run on discovery cluster.
 ## Allocate a node
 
 ```
-srun --pty --export=ALL --partition multigpu --tasks-per-node 1 --nodes 1 --mem=100G --time=10:00:00 --gres=gpu:<gpu type>:4 --cpus-per-task=16 /bin/bash
+srun --pty --export=ALL --partition multigpu --tasks-per-node 1 --nodes 1 --mem=100G --time=10:00:00 --gres=gpu:<gpu type>:4 --cpus-per-task=48 --exclusive /bin/bash
 ```
 
 The \<gpu type\> will be ```v100-sxm2``` if using V100 GPU, and ```p100``` if using P100 GPU.
