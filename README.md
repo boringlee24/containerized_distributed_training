@@ -70,13 +70,13 @@ The \<gpu type\> will be ```v100-sxm2``` if using V100 GPU, and ```p100``` if us
 
 ## Set up discovery environment (only needed for the first time)
 
-###Load CUDA driver
+### Load CUDA driver
 ```
 module load cuda/11.3
 ```
 Put this command in your ```~/.bashrc``` so you don't need to load cuda every time.
 
-###Anaconda
+### Anaconda
 First install Anaconda on discovery. The installation instructions are here: https://docs.anaconda.com/anaconda/install/linux/
 
 Install the conda environment from the .yml file
