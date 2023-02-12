@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 CONTAINER_id=$1
 NUM_GPU=$2
