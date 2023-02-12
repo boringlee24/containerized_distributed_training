@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-CONTAINER_id=$1
+CONTAINER_ID=$1
 NUM_GPU=$2
 DEVICE_IDS=$3
 
