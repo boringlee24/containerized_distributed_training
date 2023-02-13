@@ -1,0 +1,7 @@
+FROM nvcr.io/nvidia/tensorflow:22.04-tf2-py3
+
+RUN pip install --no-cache-dir astropy==4.3.1 geocoder==1.38.1 patsy statsmodels
+WORKDIR /workspace/candle_benchmarks/Pilot1
+ENV PYTHONPATH="$PYTHONPATH:/workspace/candle_benchmarks/common"
+
+CMD ["/bin/bash"]
