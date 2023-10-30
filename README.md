@@ -8,7 +8,7 @@ Right click ''benchmarks'', and launch instances from AMI. Under **Instance type
 
 Create a key pair if you did not create one before, you will use your ''<yourkeypairname>.pem'' key (RSA type) for connecting to the EC2 instance. Save the ''.pem'' key on your local machine.
 
-Select existing security group ```grpc-all-tcp```. Then go to the end and click launch instance.
+Configure security group (I created one called ```grpc-all-tcp```). Then go to the end and click launch instance.
 
 Go to **Instances**, right click the instance you just created and **connect**. Use an ssh client to connect to it. Copy the command
 
