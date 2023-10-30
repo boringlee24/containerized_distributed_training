@@ -4,7 +4,9 @@
 
 Log into the AWS console, go to Ohio region, EC2, on the left tab, select **AMIs** under Images.
 
-Right click ''benchmarks'', and launch instances from AMI. Under **Instance type**, use ```g4dn.xlarge``` for debugging, or any other instance type you want to run.
+Right click ''benchmarks'', and launch instances from AMI. The AMI is configured as private, please send a request with your AWS account ID to li.baol@northeastern.edu for me to share the AMI.
+
+Under **Instance type**, use ```g4dn.xlarge``` for debugging, or any other instance type you want to run.
 
 Create a key pair if you did not create one before, you will use your ''<yourkeypairname>.pem'' key (RSA type) for connecting to the EC2 instance. Save the ''.pem'' key on your local machine.
 
