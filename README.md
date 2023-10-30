@@ -56,7 +56,9 @@ docker stop <container ID>
 ```
 On AWS EC2 console, stop or terminate the instance.
 
-# Introduction to running the benchmarks on discovery
+# Introduction to running the benchmarks on discovery (Northeastern Cluster)
+
+Learn more about the Northeastern Research Computing cluster here: https://rc.northeastern.edu/
 
 The P100 and V100 GPU experiments can be run on discovery cluster. 
 
